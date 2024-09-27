@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div>浏览器录音听写：<button id="btn_control">开始录音</button></div> -->
+    <div id="record-main">
+      <!-- <div id="record-div"> -->
+      <img src="./record.png" id="record-img" />
+      <!-- </div> -->
+      <div id="tip">长按开始录音</div>
+      <div id="result"></div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.1.min.js"
+    ></script>
+    <script>
+      var APPID = "e4b6d1e7";
+      var API_SECRET = "OTM0NTE4ZmY1N2U0YzQ4NzU4NjI5Nzlm";
+      var API_KEY = "e50ce31617d7a34b7efe2ce0bbcff561";
+    </script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+    <script src="../crypto-js.js"></script>
+    <script src="../../dist/index.umd.js"></script>
+    <script src="./index.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init();
+    </script> -->
+  </body>
+  <style>
+    body {
+      background: #fff;
+    }
+    #record-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    }
+    img {
+      width: 50vw;
+      height: 50vw;
+    }
+    #tip {
+      font-size: 150%;
+      margin-top: 20px;
+      color: #253fb4;
+    }
+    #result {
+      margin-top: 20px;
+      width: 80%;
+      text-align: justify;
+      line-height: 2;
+      color: #999;
+    }
+  </style>
+</html>
